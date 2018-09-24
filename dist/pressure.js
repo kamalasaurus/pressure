@@ -1,13 +1,5 @@
 // Pressure v2.1.2 | Created By Stuart Yamartino | MIT License | 2015 - 2017
-;(function(root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    define([], factory);
-  } else if (typeof exports === 'object') {
-    module.exports = factory();
-  } else {
-    root.Pressure = factory();
-  }
-}(this, function() {
+export default (this, function() {
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -573,4 +565,4 @@ if (typeof window !== 'undefined') {
   supportsTouchForceChange = 'ontouchforcechange' in window.document;
 }
 return Pressure;
-}));
+}))();
