@@ -565,4 +565,4 @@ if (typeof window !== 'undefined') {
   supportsTouchForceChange = 'ontouchforcechange' in window.document;
 }
 return Pressure;
-}))();
+})();
